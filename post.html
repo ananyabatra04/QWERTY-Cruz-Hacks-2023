@@ -16,11 +16,20 @@
 
 <! title for the post>
 <h1>Create Post</h1>
-<form>
-    <label for="title">First name:</label><br>
-    <input type="text" id="title" name="fname"><br>
-    <label for="content">Last name:</label><br>
-    <input type="text" id="content" name="lname">
+<form action="/action_page.php" target="_blank">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br><br>
+    <label>Select tags for your post:</label><br>
+    <input type="checkbox" id="tag1" name="tag1" value="petitions">
+    <label for="tag1">Petitions</label><br>
+    <input type="checkbox" id="tag2" name="tag2" value="events">
+    <label for="tag2">Events</label><br>
+    <input type="checkbox" id="tag3" name="tag3" value="share">
+    <label for="tag3">Share</label><br><br>
+
+    <label for="content">Content:</label><br>
+    <input type="text" id="content" name="content"><br><br>
+    <input type="submit" value="Submit">
 </form>
 
 </body>
