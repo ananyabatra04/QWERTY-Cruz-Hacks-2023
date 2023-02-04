@@ -8,3 +8,28 @@
 }
 
 /*post*/
+.post {
+    padding: 1%;
+    text-align: center;
+    border: 2px;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background:#f1f1f1;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: #cccccc;
+    color: black
+}
