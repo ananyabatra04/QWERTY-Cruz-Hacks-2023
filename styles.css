@@ -33,3 +33,7 @@
     background-color: #cccccc;
     color: black
 }
+
+.button.active{
+    background-color: #666
+}
