@@ -119,18 +119,26 @@
                     <b id="test"></b>
                 </p>
                 <script>
+                    // let url = new URL(document.location)
+                    // posts = ["content"]
+                    //
+                    // posts.map((item) => {
+                    //     let itemValue = url.searchParams.get(item);
+                    //     let text = document.getElementById(item)
+                    //     text.innerText = itemValue
+                    // })
+
                     let url = new URL(document.location)
                     let title = url.searchParams.get("title");
-                    let text = document.getElementById("test")
+                    let text = document.getElementById("test");
                     text.innerText = title
                 </script>
-                <p id="content">
-                </p>
+                <p id="content"></p>
                 <script>
-                    let url = new URL(document.location)
-                    let content = url.searchParams.get("content");
-                    let text = document.getElementById("content")
-                    text.innerText = content
+                    let contentUrl = new URL(document.location)
+                    let content = contentUrl.searchParams.get("content");
+                    let contentText = document.getElementById("content")
+                    contentText.innerText = content
                 </script>
             </div>
         </div>
