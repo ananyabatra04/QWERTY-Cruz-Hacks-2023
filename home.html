@@ -74,12 +74,22 @@
             <div class="w3-container w3-white">
                 <p><b>
                     Diverse Voices: Shellye Archambeau</b></p>
+                <button class="w3-button w3-grey" id="button1" onclick="increaseInterest();">Interested?</button>
+                <p id="numberInterested" style="color:green;" ">67 people interested</p>
+                <script>
+                    function increaseInterest(){
+                        document.getElementById("numberInterested").innerHTML = "Can no longer express interest, this event has passed.";
+                        document.getElementById("numberInterested").style.color = "red";
+                    }
+                </script>
                 <p>Shellye Archambeau is an experienced CEO and Board Director with a track record of accomplishments building brands, high performance teams, and organizations. She is the former CEO of MetricStre. . . </p>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filterDiv events all">
             <div class="w3-container w3-white">
                 <p><b>Produce Pop-Up @ Quarry Plaza</b></p>
+                <button class="w3-button w3-green" id="button3">Interested?</button>
+                <p id="number1" style="color:green;">20 people interested</p>
                 <p>Affordable and sustainable organic produce from the UCSC Farm and local farmers, available to students, staff, faculty, and community members! Cash, EBT, Card, and Check accepted. See you there! </p>
             </div>
         </div>
@@ -96,6 +106,16 @@
         <div class="w3-third w3-container w3-margin-bottom filterDiv petitions events all">
             <div class="w3-container w3-white">
                 <p><b>20th Annual Practical Activism Conference</b></p>
+                <button class="w3-button w3-green" id="button2" onclick="Interest(); ButtonText();">Interested?</button>
+                <p id="number" style="color:green;">20 people interested</p>
+                <script>
+                    function Interest(){
+                        document.getElementById("number").innerHTML = "21 people interested";
+                    }
+                    function ButtonText(){
+                        document.getElementById("button2").innerHTML = "Interested";
+                    }
+                </script>
                 <p>Practical Activism is a free day-long conference featuring speakers, performances, interactive workshops, and a variety of hands-on creative . . .</p>
             </div>
         </div>
@@ -125,6 +145,8 @@
         <div class="w3-third w3-container filterDiv events all">
             <div class="w3-container w3-white">
                 <p><b>jackie sumell: Flowers For Incarcerated Mothers</b></p>
+                <button class="w3-button w3-green" id="button4">Interested?</button>
+                <p id="number4" style="color:green;">4 people interested</p>
                 <p>
                     jackie sumell: Flowers For Incarcerated Mothers
                     Flowers For Incarcerated Mothers is an art and garden project made in collaboration with artist jackie sumell and over two dozen mothers who are incarcerated. . .</p>
@@ -133,6 +155,8 @@
         <div class="w3-third w3-container filterDiv events all">
             <div class="w3-container w3-white">
                 <p><b>Save the UCSC SCUBA Program</b></p>
+                <button class="w3-button w3-green" id="button5">Interested?</button>
+                <p id="number5" style="color:green;">13 people interested</p>
                 <p>
                     The UCSC SCUBA program has made an immense impact on my life and on the lives of the 10,000+ students it has certified over the past 50 years. <a href = "https://www.change.org/p/university-of-california-santa-cruz-save-the-ucsc-scuba-program-c3497e1f-46a2-4f9a-b593-abdd7d3ea75e?source_location=search"><b>click to sign</b></a></p>
             </div>
