@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--    <link rel="stylesheet" href=styles.css>-->
+     <link rel="stylesheet" href=styles.css>-->
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </style>
@@ -52,11 +52,13 @@
         <div class="w3-container">
             <h1><b>Slug Share</b></h1>
             <div class="w3-section w3-bottombar w3-padding-16">
-                <span class="w3-margin-right">Filter:</span>
-                <button class="w3-button w3-white" onclick="filterSelection('all')">ALL</button>
-                <button class="w3-button w3-white" onclick="filterSelection('petitions')">Petitions</button>
-                <button class="w3-button w3-white" onclick="filterSelection('events')">Events</button>
-                <button class="w3-button w3-white" onclick="filterSelection('share')">Share Requests</button><br><br>
+<!--                <span class="w3-margin-right">Filter:</span>-->
+                <div id = "myBtnContainer">
+                    <button class="w3-button active w3-white" onclick="filterSelection('all')">ALL</button>
+                    <button class="w3-button w3-white" onclick="filterSelection('petitions')">Petitions</button>
+                    <button class="w3-button w3-white" onclick="filterSelection('events')">Events</button>
+                    <button class="w3-button w3-white" onclick="filterSelection('share')">Share Requests</button><br><br>
+                </div>
                 <form action="post.html">
                     <button class="w3-button w3-black">CREATE POST</button>
                 </form>

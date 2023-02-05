@@ -1,10 +1,13 @@
 /*filter*/
 .filterDiv {
-    display: none;
+    /*display: none;*/
 }
 
 .show {
     display: block;
+}
+.w3-container{
+    overflow: hidden;
 }
 
 /*post*/
