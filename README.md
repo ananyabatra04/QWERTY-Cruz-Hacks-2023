@@ -1,5 +1,5 @@
 # QWERTY-Cruz-Hacks-2023
-##QWERTY: Quality Women Engineering Revolutionary Technology 
+## QWERTY: Quality Women Engineering Revolutionary Technology 
 ### Ananya Batra, Nell Brodkin, Ananya Balagere, Dishita Jhawar
 
 Slug Share is a website to advocate for justice, transparency, and community building here at UCSC. With our website, students can create an account, login, and post on our main feed. Posts are filtered under Petitions, Events, and Share Requests. 
