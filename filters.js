@@ -1,8 +1,8 @@
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsBy("filterDiv");
-    if (c === "all") c = "";
+    x = document.getElementsByClassName("filterDiv");
+    if (c === "All") c = "";
     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
     for (i = 0; i < x.length; i++) {
         w3RemoveClass(x[i], "show");
@@ -37,7 +37,7 @@ function w3RemoveClass(element, name) {
 
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementsByClassName("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("w3-button");
+var btns = btnContainer.getElementsByClassName("button");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
         var current = document.getElementsByClassName("active");
@@ -45,3 +45,6 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+
+

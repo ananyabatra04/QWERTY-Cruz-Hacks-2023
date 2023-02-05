@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
      <link rel="stylesheet" href=styles.css>
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -53,7 +53,7 @@
             <h1><b>Slug Share</b></h1>
             <div class="w3-section w3-bottombar w3-padding-16">
 <!--                <span class="w3-margin-right">Filter:</span>-->
-                <div id = "myBtnContainer">
+                <div class id = "myBtnContainer">
                     <button class="w3-button active w3-white" onclick="filterSelection('all')">ALL</button>
                     <button class="w3-button w3-white" onclick="filterSelection('petitions')">Petitions</button>
                     <button class="w3-button w3-white" onclick="filterSelection('events')">Events</button>
@@ -64,24 +64,25 @@
                 </form>
             </div>
         </div>
+        <script src = "filters.js"></script>
     </header>
 
     <!-- First Photo Grid-->
     <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom filterDiv events">
+        <div class="w3-third w3-container w3-margin-bottom filterDiv events all">
             <div class="w3-container w3-white">
                 <p><b>
                     Diverse Voices: Shellye Archambeau</b></p>
                 <p>Shellye Archambeau is an experienced CEO and Board Director with a track record of accomplishments building brands, high performance teams, and organizations. She is the former CEO of MetricStre. . . </p>
             </div>
         </div>
-        <div class="w3-third w3-container w3-margin-bottom filterDiv events">
+        <div class="w3-third w3-container w3-margin-bottom filterDiv events all">
             <div class="w3-container w3-white">
                 <p><b>Produce Pop-Up @ Quarry Plaza</b></p>
                 <p>Affordable and sustainable organic produce from the UCSC Farm and local farmers, available to students, staff, faculty, and community members! Cash, EBT, Card, and Check accepted. See you there! </p>
             </div>
         </div>
-        <div class="w3-third w3-container filterDiv share">
+        <div class="w3-third w3-container filterDiv share all">
             <div class="w3-container w3-white">
                 <p><b>Can I borrow a vacuum?</b></p>
                 <p>I live in the C9 Apartments. My vacuum recently broke and I have guests coming in 2 hours. If anybody near me has a vacuum, I would really appreciate it. Message me to coordinate pick up and return.</p>
@@ -91,19 +92,19 @@
 
     <!-- Second Photo Grid-->
     <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom filterDiv petitions">
+        <div class="w3-third w3-container w3-margin-bottom filterDiv petitions events all">
             <div class="w3-container w3-white">
                 <p><b>20th Annual Practical Activism Conference</b></p>
                 <p>Practical Activism is a free day-long conference featuring speakers, performances, interactive workshops, and a variety of hands-on creative . . .</p>
             </div>
         </div>
-        <div class="w3-third w3-container w3-margin-bottom filterDiv petitions">
+        <div class="w3-third w3-container w3-margin-bottom filterDiv petitions all">
             <div class="w3-container w3-white">
                 <p><b>Increasing Access At UCSC</b></p>
                 <p>UCSC is not accessible for people with disabilities. Sign my petition to install more ramps and accessible walkways.</p>
             </div>
         </div>
-        <div class="w3-third w3-container filterDiv petitions">
+        <div class="w3-third w3-container filterDiv share all">
             <div class="w3-container w3-white">
                 <p><b>Need A Place to Stay for the Weekend.</b></p>
                 <p>My apartment has massive cockroaches. I need a place to stay over the weekend while pest control sprays my place. I can pay, do chores, and will be . . .</p>
@@ -113,7 +114,7 @@
 
     <!-- Third Photo Grid-->
     <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom filterDiv petitions">
+        <div class="w3-third w3-container w3-margin-bottom filterDiv all">
             <div class="w3-container w3-white">
                 <p>
                     <b id="test"></b>
@@ -142,13 +143,13 @@
                 </script>
             </div>
         </div>
-        <div class="w3-third w3-container w3-margin-bottom filterDiv petitions">
+        <div class="w3-third w3-container w3-margin-bottom filterDiv share all">
             <div class="w3-container w3-white">
                 <p><b>Harry Potter Give Away</b></p>
                 <p>I'm giving away my Harry Potter Book Series because I'm downsizing. All books are in good condition and are clean. I want to find them new homes. Message me if you're interested!</p>
             </div>
         </div>
-        <div class="w3-third w3-container filterDiv petitions">
+        <div class="w3-third w3-container filterDiv events all">
             <div class="w3-container w3-white">
                 <p><b>jackie sumell: Flowers For Incarcerated Mothers</b></p>
                 <p>
@@ -276,6 +277,7 @@
             </div>
         </div>
         <hr>
+        <script src = "filters.js"></script>
 
     </div>
 
@@ -365,6 +367,8 @@
         document.getElementById("myOverlay").style.display = "none";
     }
 </script>
+
+<script src = "filters.js"></script>
 
 </body>
 </html>

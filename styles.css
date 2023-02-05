@@ -1,14 +1,16 @@
-/*filter*/
+
 .filterDiv {
-    /*display: none;*/
+    display: none;
 }
+
 
 .show {
     display: block;
 }
-.w3-container{
-    overflow: hidden;
-}
+
+/*.container{*/
+/*    overflow: hidden;*/
+/*}*/
 
 /*post*/
 .post {
@@ -29,7 +31,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 .button:hover{
