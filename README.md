@@ -6,4 +6,4 @@ Petitions contain petitions and causes related to UCSC that students can support
 the Share Requests tab contains requests that UCSC students have made for items or favors that other students can respond to. This allows people to access the things they need, promoting equity and community-building. 
 ## Links
 
-- [ ] [Slug Share](http://localhost:63342/QWERTY-Cruz-Hacks-2023/landingpage.html) 
+
