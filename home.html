@@ -282,6 +282,8 @@
     </div>
 
     <!-- Contact Section -->
+    <!-- Sample HTML Form -->
+
     <div class="w3-container w3-padding-large w3-grey">
         <h4 id="contact"><b>Contact Me</b></h4>
         <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
@@ -299,10 +301,15 @@
             </div>
         </div>
         <hr class="w3-opacity">
-        <form action="/action_page.php" target="_blank">
+
+
+        <form action="mailto:sammytheslug@ucsc.edu"
+              method="POST"
+              enctype="multipart/form-data"
+              name="EmailForm">
             <div class="w3-section">
                 <label>Name</label>
-                <input class="w3-input w3-border" type="text" name="Name" required>
+                <input class="w3-input w3-border" type="text"  name="Name" required>
             </div>
             <div class="w3-section">
                 <label>Email</label>
@@ -313,6 +320,7 @@
                 <input class="w3-input w3-border" type="text" name="Message" required>
             </div>
             <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+
         </form>
     </div>
 
