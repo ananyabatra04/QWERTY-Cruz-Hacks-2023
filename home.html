@@ -158,6 +158,51 @@
             </div>
         </div>
 
+
+
+        <!-- Fourth Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-fourth w3-container w3-margin-bottom filterDiv all">
+                <div class="w3-container w3-white">
+                    <p>
+                        <b id="test"></b>
+                    </p>
+                    <script>
+                        // let url = new URL(document.location)
+                        // posts = ["content"]
+                        //
+                        // posts.map((item) => {
+                        //     let itemValue = url.searchParams.get(item);
+                        //     let text = document.getElementById(item)
+                        //     text.innerText = itemValue
+                        // })
+
+                        let url = new URL(document.location)
+                        let title = url.searchParams.get("title");
+                        let text = document.getElementById("test");
+                        text.innerText = title
+                    </script>
+                    <p id="content"></p>
+                    <script>
+                        let contentUrl = new URL(document.location)
+                        let content = contentUrl.searchParams.get("content");
+                        let contentText = document.getElementById("content")
+                        contentText.innerText = content
+                    </script>
+                </div>
+            </div>
+            <div class="w3-third w3-container w3-margin-bottom filterDiv petitions all">
+                <div class="w3-container w3-white">
+                    <p><b>Keep Santa Cruz Clean</b></p>
+                    <p>Most sunny weekends driving around the county you'll see trash and recycling bins literally overflowing. Plastic bottles are strewn along the sides of the roads and beaches looking like the aftermath of a frat party. The time is now to stand up and protect what we love with some affirmative action!The time is now for enforcement and fines.  If an individual doesn't have the funds to pay the fine that's ok they can choose community service cleaning the areas which they just used as a dump. <b><a href="https://www.change.org/p/santa-cruz-county-board-of-supervisors-keep-santa-cruz-clean?source_location=search">click to sign</a></b></p>
+                </div>
+            </div>
+            <div class="w3-third w3-container filterDiv petitions all">
+                <div class="w3-container w3-white">
+                    <p><b>Introduce ASL Courses at UC Santa Cruz</a></b></p>
+                    <p>This petition urges the administrators of the University of California, Santa Cruz to introduce ASL courses as academic options for students to enroll in. American Sign language should be offered under the UCSC Language department for the following reasons. <a href = "https://www.change.org/p/ucsc-academic-affairs-introduce-asl-courses-at-uc-santa-cruz?source_location=search"><b>click to sign</b></a></p>
+                </div>
+            </div>
     </div>
 
     <!-- Pagination -->
@@ -293,7 +338,7 @@
             </div>
             <div class="w3-third w3-teal">
                 <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-                <p>Chicago, US</p>
+                <p>Santa Cruz, CA</p>
             </div>
             <div class="w3-third w3-dark-grey">
                 <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
