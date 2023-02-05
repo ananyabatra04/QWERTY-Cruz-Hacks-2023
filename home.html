@@ -56,7 +56,7 @@
                 <button class="w3-button w3-white" onclick="filterSelection('all')">ALL</button>
                 <button class="w3-button w3-white" onclick="filterSelection('petitions')">Petitions</button>
                 <button class="w3-button w3-white" onclick="filterSelection('events')">Events</button>
-                <button class="w3-button w3-white" onclick="filterSelection('share')">Share Requests</button>
+                <button class="w3-button w3-white" onclick="filterSelection('share')">Share Requests</button><br><br>
                 <form action="post.html">
                     <button class="w3-button w3-black">CREATE POST</button>
                 </form>
@@ -113,8 +113,23 @@
     <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom filterDiv petitions">
             <div class="w3-container w3-white">
-                <p><b>Open Labs</b></p>
-                <p>Open labs are co-working opportunities for website owners and content creators to meet with Information Technology Services staff to answer questions on any questions related to building your websites.</p>
+                <p>
+                    <b id="test"></b>
+                </p>
+                <script>
+                    let url = new URL(document.location)
+                    let title = url.searchParams.get("title");
+                    let text = document.getElementById("test")
+                    text.innerText = title
+                </script>
+                <p id="content">
+                </p>
+                <script>
+                    let url = new URL(document.location)
+                    let content = url.searchParams.get("content");
+                    let text = document.getElementById("content")
+                    text.innerText = content
+                </script>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filterDiv petitions">
